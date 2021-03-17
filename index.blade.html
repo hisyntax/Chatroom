@@ -1,0 +1,44 @@
+@include('header')
+    <div class="container-fluid mt-3">
+        <div class="container">
+            <div class="intro">
+                <p>
+                    <span><span>ChatRoom</span><span><sub>plus</sub></span></span>  is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nihil minima possimus voluptatibus aperiam vero qui, molestias consequuntur perspiciatis accusamus id laudantium culpa eum ducimus aliquam fugit. Doloribus, earum aperiam!
+                </p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sit distinctio quas provident a labore blanditiis placeat facilis ipsa et quo dolores ut minima, fugit aut ad, iure earum impedit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sit distinctio quas provident a labore blanditiis placeat facilis ipsa et quo dolores ut minima, fugit aut ad, iure earum impedit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sit distinctio quas provident a labore blanditiis placeat facilis ipsa et quo dolores ut minima, fugit aut ad, iure earum impedit.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, sit distinctio quas provident a labore blanditiis placeat facilis ipsa et quo dolores ut minima, fugit aut ad, iure earum impedit.</p>
+            </div>
+        </div>
+        <div class="room_option" style="width: 100%;">
+            <div class="create_room">
+                <a href="/create-room"><span class="btn btn-primary">Create Room</span></a>
+            </div>
+            <div class="join_room">
+                <a href="/join-room"><span class="btn btn-success">Join Room</span></a>
+            </div>
+            <style>
+                .room_option{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .room_option .create_room , .room_option .join_room{
+                    margin: 1%;
+                    flex: 48%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .room_option .create_room span{
+                    min-width: 120px;
+                }
+                .room_option .join_room span{
+                    min-width: 120px;
+                }
+            </style>
+        </div>
+    </div>
+   
+@include('footer')

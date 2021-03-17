@@ -1,0 +1,34 @@
+@include('header')
+<div class="container-fluid mt-3">
+    <div class="container text-center mb-2" id="title">Create Room</div>
+    <div class="room_input_box">
+        <form action="chat-room" method="POST">
+            @csrf
+            <div>User Name</div>
+            <input type="text" name="username" placeholder="Input User Name..">
+            <div>Room Name</div>
+            <input type="text" name="roomname" placeholder="Input Room Name..">
+            <div>Room Limit</div>
+            <input type="text" name="roomlimit" placeholder="Input the numbers of members in room.."><br>
+            <style>
+                select:focus{
+                    border: 2px solid darkorange;
+                    border-radius: 5px;
+                    color: darkorange;
+                }
+            </style>
+            {{-- <select name="roomlimit" id="">
+                <option value="">Unlimited Roomies</option>
+                <option value="">2 Roomies</option>
+                <option value="">5 Roomies</option>
+                <option value="">10 Roomies</option>
+                <option value="">20 Roomies</option>
+                <option value="">50 Roomies</option>
+                <option value="">100 Roomies</option>
+            </select><br><br> --}}
+            <button type="submit">Create Room</button>
+        </form>
+    </div>
+</div>
+
+@include('footer')

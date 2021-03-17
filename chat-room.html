@@ -1,0 +1,103 @@
+@include('header')
+<div class="container-fluid">
+    <div class="container text-center mb-2" id="title">Chat Room</div>
+    <div class="chat_room_input_box">
+        <div class="title text-center mb-1" style="background-color: darkorange; padding:5px 0px;border-top-right-radius:10px;border-top-left-radius:10px;">#<span style="color: white;">Room Name</span></div>
+        <div class="messages">
+            <div class="recievers_container">
+                <div class="recievers_msg">
+                    <div class="header_tag">Syntax_x</div>
+                    <div class="body">
+                        <p style="padding:5px">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ex,
+                            accusantium a veniam libero corporis cum explicabo, ducimus dicta nemo 
+                            similique numquam sed iure ea magni cumque rem sunt dolores!
+                        </p>
+                    </div>
+                    <div class="reservers_time" style="padding: 5px;">
+                        <span>10:30pm. 13 March, 2021.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="senders_container">
+                <div class="senders_msg">
+                    <div class="header_tag">Samoria</div>
+                    <div class="body">
+                        <p style="padding:5px">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ex,
+                            accusantium a veniam libero corporis cum explicabo, ducimus dicta nemo 
+                            similique numquam sed iure ea magni cumque rem sunt dolores!
+                        </p>
+                    </div>
+                    <div class="senders_time" style="padding: 5px;">
+                        <span>10:30pm. 13 March, 2021.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recievers_container">
+                <div class="recievers_msg">
+                    <div class="header_tag">Syntax_x</div>
+                    <div class="body">
+                        <p style="padding:5px">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ex,
+                            accusantium a veniam libero corporis cum explicabo, ducimus dicta nemo 
+                            similique numquam sed iure ea magni cumque rem sunt dolores!
+                        </p>
+                    </div>
+                    <div class="reservers_time" style="padding: 5px;">
+                        <span>10:30pm. 13 March, 2021.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="senders_container">
+                <div class="senders_msg">
+                    <div class="header_tag">Samoria</div>
+                    <div class="body">
+                        <p style="padding:5px">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ex,
+                            accusantium a veniam libero corporis cum explicabo, ducimus dicta nemo 
+                            similique numquam sed iure ea magni cumque rem sunt dolores!
+                        </p>
+                    </div>
+                    <div class="senders_time" style="padding: 5px;">
+                        <span>10:30pm. 13 March, 2021.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            div.send_msg form button{
+                border-radius: 0px;
+                border-bottom-right-radius: 10px;
+            }
+            div.send_msg form button:hover{
+                background-color: darkorange;
+                color: white;
+            }
+            .send_msg form{
+                display: flex;
+                width: 100%;  
+            }
+            .send_msg input{
+                width:  calc(100% - 60px);
+                border-radius: 0px;
+                border: 1px solid rgb(167, 165, 165);
+                border-bottom-left-radius: 10px;
+                padding-left: 5px;
+            }
+            .send_msg button{
+                width: 60px;
+                padding: 5px 7px;
+                min-width: 60px;
+            }
+        </style>
+        <div class="send_msg">
+            <form action="" method="">
+                <input  type="text" placeholder="Input Message.." aria-label="Input Message">
+                <button style="border: 1px solid rgb(167, 165, 165);" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+</div>
+@include('footer')
